@@ -1,0 +1,10 @@
+require("ninghan.plugins-setup")
+require("ninghan.core.options")
+require("ninghan.core.colorscheme")
+require("ninghan.core.keymaps")
+
+require("ninghan.plugins.nvim-tree")
+require("ninghan.plugins.lualine")
+require("ninghan.plugins.telescope")
+require("ninghan.plugins.coc")
+require("ninghan.plugins.autopairs")
