@@ -1,6 +1,0 @@
-{
-  "rust-analyzer.inlayHints.TypeHints.enable": false,
-  "pyright.inlayHints.variableTypes": false,
-  "pyright.inlayHints.functionReturnTypes": false,
-  "coc.preferences.formatOnSaveFiletypes": ["*"]
-}
