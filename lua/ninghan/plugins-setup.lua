@@ -59,12 +59,23 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 	-- surroundings
 	use("tpope/vim-surround")
-	-- autopairs
-	use("windwp/nvim-autopairs")
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	-- markdown preview
 	use("ellisonleao/glow.nvim")
+	-- float terminal
+	use("voldikss/vim-floaterm")
+	-- treesitter configuration
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+	})
+	-- auto cosling
+	use("windwp/nvim-ts-autotag")
+	use("windwp/nvim-autopairs")
 
 	if packer_bootstrap then
 		require("packer").sync()
