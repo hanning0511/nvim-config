@@ -29,6 +29,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	-- color scheme
 	use("navarasu/onedark.nvim")
+	use("sainnhe/everforest")
 	-- file exploer
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
