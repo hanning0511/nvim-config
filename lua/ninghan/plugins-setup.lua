@@ -28,8 +28,8 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-lua/plenary.nvim")
 	-- color scheme
-	use("navarasu/onedark.nvim")
 	use("sainnhe/everforest")
+	use("olimorris/onedarkpro.nvim")
 	-- file exploer
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
