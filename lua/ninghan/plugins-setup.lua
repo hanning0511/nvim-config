@@ -77,6 +77,8 @@ return packer.startup(function(use)
 	-- auto cosling
 	use("windwp/nvim-ts-autotag")
 	use("windwp/nvim-autopairs")
+	-- nvim-transparent
+	use("xiyaowong/nvim-transparent")
 
 	if packer_bootstrap then
 		require("packer").sync()
