@@ -64,8 +64,6 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	-- markdown preview
 	use("ellisonleao/glow.nvim")
-	-- float terminal
-	use("voldikss/vim-floaterm")
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
