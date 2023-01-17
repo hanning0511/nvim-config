@@ -8,6 +8,7 @@ saga.setup({})
 
 local keymap = vim.keymap.set
 
+-- lsp finder
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 -- rename
 keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
@@ -22,3 +23,14 @@ keymap("n", "<leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
 keymap("n", "<leader>co", "<cmd>Lspsaga outline<CR>")
 -- toggle float terminal
 keymap({ "n", "t" }, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
+-- rename
+keymap("n", "<F2>", "<cmd>Lspsaga rename<CR>")
+-- code action
+keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+-- line diagnostics
+keymap("n", "<leader>D", "<cmd>Lspsaga show_line_diagnostics<CR>")
+keymap("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
+keymap("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+-- hover document
+keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>")
