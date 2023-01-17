@@ -6,7 +6,6 @@ end
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
 local diagnostics = null_ls.builtins.diagnostics -- to setup linters
-local hover = null_ls.builtins.hover -- to setup hover
 
 -- to setup format on save
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
