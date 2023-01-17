@@ -11,6 +11,8 @@ local keymap = vim.keymap.set
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 -- rename
 keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
+-- peek definition
+keymap("n", "pd", "<cmd>Lspsaga peek_definition<CR>")
 -- goto definition
 keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
 -- call hierarchy
