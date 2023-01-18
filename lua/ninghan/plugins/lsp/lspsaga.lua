@@ -11,20 +11,18 @@ local keymap = vim.keymap.set
 -- lsp finder
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 -- rename
-keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
+keymap("n", "rn", "<cmd>Lspsaga rename<CR>")
 -- peek definition
 keymap("n", "pd", "<cmd>Lspsaga peek_definition<CR>")
 -- goto definition
 keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
 -- call hierarchy
-keymap("n", "<leader>ci", "<cmd>Lspsaga incoming_calls<CR>")
-keymap("n", "<leader>co", "<cmd>Lspsaga outgoing_calls<CR>")
+keymap("n", "ci", "<cmd>Lspsaga incoming_calls<CR>")
+keymap("n", "co", "<cmd>Lspsaga outgoing_calls<CR>")
 -- toggle outline
 keymap("n", "<leader>co", "<cmd>Lspsaga outline<CR>")
 -- toggle float terminal
 keymap({ "n", "t" }, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
--- rename
-keymap("n", "<F2>", "<cmd>Lspsaga rename<CR>")
 -- code action
 keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 -- line diagnostics
