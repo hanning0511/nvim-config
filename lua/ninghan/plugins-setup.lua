@@ -77,6 +77,8 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	-- nvim-transparent
 	use("xiyaowong/nvim-transparent")
+	-- comment
+	use("numToStr/Comment.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
