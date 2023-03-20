@@ -79,6 +79,8 @@ return packer.startup(function(use)
 	use("xiyaowong/nvim-transparent")
 	-- comment
 	use("numToStr/Comment.nvim")
+	-- sqls.nvim
+	use("nanotee/sqls.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

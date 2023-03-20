@@ -95,3 +95,10 @@ lspconfig["cssls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+
+-- configure sql server
+lspconfig["sqls"].setup({
+	on_attach = function(client, bufnr)
+		require("sqls").on_attach(client, bufnr)
+	end,
+})
