@@ -75,8 +75,6 @@ return packer.startup(function(use)
 	-- auto cosling
 	use("windwp/nvim-ts-autotag")
 	use("windwp/nvim-autopairs")
-	-- nvim-transparent
-	use("xiyaowong/nvim-transparent")
 	-- comment
 	use("numToStr/Comment.nvim")
 	-- sqls.nvim
