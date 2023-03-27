@@ -1,6 +1,6 @@
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then
-  return
+	return
 end
 
 vim.g.loaded_netrw = 1
@@ -13,3 +13,4 @@ nvimtree.setup()
 
 -- key mappings
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "T", ":NvimTreeFocus<CR>")
