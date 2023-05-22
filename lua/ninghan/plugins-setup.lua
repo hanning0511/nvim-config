@@ -30,6 +30,8 @@ return packer.startup(function(use)
 	-- color scheme
 	use("sainnhe/everforest")
 	use("olimorris/onedarkpro.nvim")
+	use("folke/tokyonight.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 	-- file exploer
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
