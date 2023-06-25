@@ -32,6 +32,9 @@ return packer.startup(function(use)
 	use("olimorris/onedarkpro.nvim")
 	use("folke/tokyonight.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
+	use("ellisonleao/gruvbox.nvim")
+	use("rebelot/kanagawa.nvim")
+
 	-- file exploer
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
@@ -81,6 +84,13 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim")
 	-- sqls.nvim
 	use("nanotee/sqls.nvim")
+
+	-- use({
+	-- 	"archibate/nvim-gpt",
+	-- 	requires = { "nvim-telescope/telescope.nvim" },
+	-- })
+
+	use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
 
 	if packer_bootstrap then
 		require("packer").sync()
