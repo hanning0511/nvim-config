@@ -85,12 +85,8 @@ return packer.startup(function(use)
 	-- sqls.nvim
 	use("nanotee/sqls.nvim")
 
-	-- use({
-	-- 	"archibate/nvim-gpt",
-	-- 	requires = { "nvim-telescope/telescope.nvim" },
-	-- })
-
-	use({ "codota/tabnine-nvim", run = "./dl_binaries.sh" })
+	-- github copilot
+	use("github/copilot.vim")
 
 	if packer_bootstrap then
 		require("packer").sync()
