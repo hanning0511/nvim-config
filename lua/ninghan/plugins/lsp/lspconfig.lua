@@ -46,20 +46,8 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- configure clangd
-lspconfig["clangd"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 -- configure pyright
 lspconfig["pyright"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure gopls
-lspconfig["gopls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
