@@ -9,7 +9,7 @@ saga.setup({})
 local keymap = vim.keymap.set
 
 -- lsp finder
-keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
+keymap("n", "gh", "<cmd>Lspsaga finder<CR>")
 -- rename
 keymap("n", "rn", "<cmd>Lspsaga rename<CR>")
 -- peek definition
